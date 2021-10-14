@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+
+        
+        <link rel="sortcut icon" href="../public/img/logo.png" type="image/png" />;
+
+        <link rel="stylesheet" href="../../public/css/chat.css">
+        <title>ChatZ</title>
+    </head>
+    <body>
+        <form id="chat">
+            <header>
+                <div class="containner-header">
+                    <div class="input-name">
+                        <input type="text" id="input-name" placeholder="Your name" autocomplete="off">
+                    </div>
+                    <div class="logo-header">
+                        <img src="../public/img/logo.png" id="img-logo-header">
+                    </div>
+                </div>
+            </header>
+
+            <section>
+                <div class="msg-containner" id="message-containner">
+                    
+                </div>
+            </section>
+            
+            <section>
+                <div class="containner-input-text">
+                    <!-- <div class="input-image containner-input-style">
+                        <img src="../public/img/cam.png" id="image-camera">
+                    </div> -->
+                    <div class="input-text containner-input-style">
+                        <input type="text" id="input-style" placeholder="Type a message..." autocomplete="off">
+                    </div>
+                    <button type="submit" class="send-message containner-input-style">
+                        <img src="../public/img/send.png" id="send-style">
+                    </button>
+                </div>
+            </section>
+        </form>
+        <script src="../../public/js/socket.js"></script>
+        
+    </body>
+</html>
